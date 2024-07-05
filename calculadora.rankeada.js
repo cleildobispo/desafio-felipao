@@ -1,9 +1,8 @@
 function calcularNivel(vitorias, derrotas) {
-    // Calcula o saldo de Rankeadas
+
     let saldoVitorias = vitorias - derrotas;
     
-    // Determina o nível baseado no saldo de vitórias
-    let nivel;
+        let nivel;
     if (vitorias < 10) {
         nivel = "Ferro";
     } else if (vitorias >= 10 && vitorias <= 20) {
@@ -20,12 +19,7 @@ function calcularNivel(vitorias, derrotas) {
         nivel = "Imortal";
     }
 
-    // Retorna o resultado
-    return `O Herói tem um saldo de ${saldoVitorias} está no nível de ${nivel}`;
+       return `O Herói tem um saldo de ${saldoVitorias} está no nível de ${nivel}`;
 }
 
-// Exemplo de uso da função
-const vitorias = 75;
-const derrotas = 25;
-const resultado = calcularNivel(vitorias, derrotas);
-console.log(resultado); // Exibe: "O Herói tem um saldo de 50 está no nível de Ouro"
+
